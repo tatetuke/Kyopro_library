@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{62E0C692-37E3-4782-B012-D4B2E4EA7C6F}</ProjectGuid>
+    <RootNamespace>Atcoder2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bitsetで圧縮.cpp" />
+    <ClCompile Include="grundy数.cpp" />
+    <ClCompile Include="ICPC.cpp" />
+    <ClCompile Include="KMP.cpp" />
+    <ClCompile Include="LCA(最小共通祖先).cpp" />
+    <ClCompile Include="mosAlgo.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Z-algorithm.cpp" />
+    <ClCompile Include="カタラン数.cpp" />
+    <ClCompile Include="コンビネーション.cpp" />
+    <ClCompile Include="サイクル検出.cpp" />
+    <ClCompile Include="偏角を求める.cpp" />
+    <ClCompile Include="拡張ユークリッドの互除法.cpp" />
+    <ClCompile Include="最大流.cpp" />
+    <ClCompile Include="円、直線、線分の交点.cpp" />
+    <ClCompile Include="円と線分の交差判定.cpp" />
+    <ClCompile Include="円の接点.cpp" />
+    <ClCompile Include="円同士の交差判定.cpp" />
+    <ClCompile Include="単一始点最短経路%28Bellman Ford%29.cpp" />
+    <ClCompile Include="多角形の面積%28整数%29.cpp" />
+    <ClCompile Include="尺取り法.cpp" />
+    <ClCompile Include="形式的べき級数(FPS).cpp" />
+    <ClCompile Include="拡張ダイクストラ.cpp" />
+    <ClCompile Include="数え上げメモ.cpp" />
+    <ClCompile Include="時計半時計.cpp" />
+    <ClCompile Include="最小包括円.cpp" />
+    <ClCompile Include="最短ハミルトン路.cpp" />
+    <ClCompile Include="木の直径.cpp" />
+    <ClCompile Include="永続データ構造（セグtree）.cpp" />
+    <ClCompile Include="点、直線、線分の距離.cpp" />
+    <ClCompile Include="牛ゲー.cpp" />
+    <ClCompile Include="直線同士の交差判定.cpp" />
+    <ClCompile Include="約数全列挙.cpp" />
+    <ClCompile Include="デバッグメモ.cpp" />
+    <ClCompile Include="トポロジカルソート.cpp" />
+    <ClCompile Include="フェネック木.cpp" />
+    <ClCompile Include="三分探索.cpp" />
+    <ClCompile Include="二次元累積和.cpp" />
+    <ClCompile Include="ダイクストラ法.cpp" />
+    <ClCompile Include="セグメント木.cpp" />
+    <ClCompile Include="UnionFInd.cpp" />
+    <ClCompile Include="ライブラリ.cpp" />
+    <ClCompile Include="二分探索.cpp" />
+    <ClCompile Include="強連結成分分解.cpp" />
+    <ClCompile Include="数学定理.cpp" />
+    <ClCompile Include="巡回セールスマン.cpp" />
+    <ClCompile Include="桁和,gcd等.cpp" />
+    <ClCompile Include="問題考察.cpp" />
+    <ClCompile Include="座標圧縮.cpp" />
+    <ClCompile Include="bit全探索.cpp" />
+    <ClCompile Include="中国剰余定理，他数学.cpp" />
+    <ClCompile Include="素因数の個数.cpp" />
+    <ClCompile Include="考察.cpp" />
+    <ClCompile Include="行列累乗.cpp" />
+    <ClCompile Include="累乗、逆元.cpp" />
+    <ClCompile Include="部分集合の部分集合.cpp" />
+    <ClCompile Include="P・C・H・N!.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
